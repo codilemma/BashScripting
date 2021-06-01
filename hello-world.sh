@@ -9,5 +9,14 @@
 ##########################################
 
 
+hello_text="Hello World!"
+
 # Print the text to te Terminal.
-echo "Hello World!"
+echo ${hello_text}
+
+# Bash considers everything as a string
+hello_int=1
+echo ${hello_int} + 1
+
+# You need to tell bash to do arithmetic
+echo $(( ${hello_int} + 1 ))
